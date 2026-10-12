@@ -12,7 +12,8 @@
         <h1>Student Event Management System</h1>
         <p>Discover and participate in college events</p>
     </header>
-    <main id="app">
+    
+<main id="app">
     <section id="events">
         <h2>Upcoming Events</h2>
 
@@ -27,8 +28,29 @@
             <p>Date: 25 November 2026</p>
             <p>Venue: College Ground</p>
         </article>
-        </section>
-    </main>
+    </section>
+
+    <section id="registration">
+        <h2>Register for an Event</h2>
+
+        <form id="registrationForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="eventName">Select Event:</label>
+            <select id="eventName" required>
+                <option value="">Choose an event</option>
+                <option value="Technical Fest">Technical Fest</option>
+                <option value="Cultural Fest">Cultural Fest</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+</main>
+
 
     <script src="js/script.js"></script>
 </body>
