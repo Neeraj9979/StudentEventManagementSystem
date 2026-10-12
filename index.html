@@ -14,8 +14,26 @@
     </header>
 
     <main id="app">
-        <p>Welcome! Explore upcoming college events.</p>
-    </main>
+    <section id="registration">
+        <h2>Register for an Event</h2>
+
+        <form id="registrationForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="eventName">Select Event:</label>
+            <select id="eventName" required>
+                <option value="">Choose an event</option>
+                <option value="Technical Fest">Technical Fest</option>
+                <option value="Cultural Fest">Cultural Fest</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+</main>
 
     <script src="js/script.js"></script>
 </body>
