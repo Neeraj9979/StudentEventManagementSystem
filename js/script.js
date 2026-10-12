@@ -21,3 +21,23 @@ function addEvent(name, date) {
 }
 
 displayEvents();
+
+const registrationForm = document.getElementById("registrationForm");
+
+if (registrationForm) {
+    registrationForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const studentName =
+            document.getElementById("studentName").value;
+
+        const eventName =
+            document.getElementById("eventName").value;
+
+        document.getElementById("message").textContent =
+            studentName + ", you registered for " + eventName + "!";
+
+        registrationForm.reset();
+    });
+}
+
